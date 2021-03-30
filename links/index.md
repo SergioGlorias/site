@@ -1,1 +1,3 @@
-<h1 align="center"> Redes Sociais </h1>
+<p align="center">
+<a href="https://twitter.com/SergioGlorias"><img src="../img/twitter.png"/></a><a href="https://discord.io/ClaSergio"><img src="../img/discord.png"/></a>
+</p>
