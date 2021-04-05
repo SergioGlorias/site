@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Meu Redirect</title>
+</head>
+<body>
+    <p>
+        Istó é um teste
+    </p>
+    <script>
+        const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA`;
+
+        fetch(RSS_URL)
+          .then(response => response.text())
+          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+          .then(data => console.log(data))
+    </script>
+</body>
+</html>
