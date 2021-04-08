@@ -11,7 +11,11 @@
     <script>
         const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA`;
 
-        fetch(RSS_URL)
+        fetch(RSS_URL, {
+            method: "GET",
+            mode:"cors",
+            credentials:"omit"            
+        })
           .then(response => response.text())
           .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
           .then(data => console.log(data))
