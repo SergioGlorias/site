@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Meu Redirect</title>
 </head>
+
 <body>
     <p>
         Istó é um teste
@@ -13,12 +15,13 @@
 
         fetch(RSS_URL, {
             method: "GET",
-            mode:"cors",
-            credentials:"omit"            
+            mode: "no-cors",
+            credentials: "omit"
         })
-          .then(response => response.text())
-          .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-          .then(data => console.log(data))
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+            .then(data => console.log(data))
     </script>
 </body>
+
 </html>
