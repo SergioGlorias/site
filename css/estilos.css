@@ -1,0 +1,13 @@
+/*body {
+	background: linear-gradient(0.15turn, #33b4eb, #c8f8c4, #f55b35) no-repeat;
+}*/
+
+.back {
+    position: fixed;
+    inset: 0px;
+    z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0.15turn, #4a06a3, #880707);
+}
