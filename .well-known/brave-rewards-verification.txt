@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: serginho.dev
+Token: 82a9c8f64f93abad334fca0d1fb45101e849f2d62e17ae598321cac0524918a2
